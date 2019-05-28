@@ -2,8 +2,11 @@ public class Hero implements Comparable<Hero> {
 
     @Override
     public int compareTo(Hero hero) {
-        return this.getName().compareTo(hero.getName());
+        return hero.getAge() - this.getAge();
     }
+
+
+
 
     // attributs
     private String name;
